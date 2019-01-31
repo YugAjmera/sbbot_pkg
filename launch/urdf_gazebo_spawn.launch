@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	
+	<arg name="model" default=""/>
+	<param name="robot_description" command="$(find xacro)/xacro --inorder '$(find sbbot_pkg)/urdf/robot.urdf.xacro'" />
+
+		
+	<arg name="x" default="0.0" />
+	<arg name="y" default="0.0" />
+	<arg name="z" default="10" />
+	
+	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -model $(arg model) -param robot_description"/>
+
+</launch>
