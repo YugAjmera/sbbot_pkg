@@ -1,6 +1,6 @@
 # SBBot
 
-## A Self-Balancing Robot which is based on ROS
+## A Self-Balancing Robot based on ROS
 
 
 1. `cd catkin_ws/src`
