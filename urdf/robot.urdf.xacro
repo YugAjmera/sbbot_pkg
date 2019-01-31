@@ -55,7 +55,7 @@
 		
 		<collision name="collision_chassis">
 			<geometry>
-				<box size="${l1} ${b1} ${h1}"/>
+				<box size="${l1} ${b1} ${h1+b2+h1}"/>
 			</geometry>
 		</collision>
 
@@ -83,7 +83,7 @@
 		</visual>
 
 		<collision name="collision_right_wheel">
-		<origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+			<origin rpy="0 1.5707 0" xyz="0 0 0"/>
 			<geometry>
 				<cylinder length="${l3}" radius="${r3}"/>
 			</geometry>
@@ -91,7 +91,7 @@
 
 		<inertial>
 			<mass value="0.2"/>
-			<origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+				<origin rpy="0 1.5707 0" xyz="0 0 0"/>
 			<inertia ixx="${m3*((3*r3*r3)+(l3*l3))/12.0}" ixy="0" ixz="0" iyy="${m3*((3*r3*r3)+(l3*l3))/12.0}" iyz="0" izz="${(m3*r3*r3)/2.0}"/>
 		</inertial>
 	</link>
@@ -116,7 +116,7 @@
 		</visual>
 
 		<collision name="collision_left_wheel">
-		<origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+			<origin rpy="0 1.5707 0" xyz="0 0 0"/>
 			<geometry>
 				<cylinder length="${l3}" radius="${r3}"/>
 			</geometry>
@@ -124,7 +124,7 @@
 
 		<inertial>
 			<mass value="0.2"/>
-			<origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+			<origin rpy="0 1.5707 0" xyz="0 0 0"/>
 			<inertia ixx="${m3*((3*r3*r3)+(l3*l3))/12.0}" ixy="0" ixz="0" iyy="${m3*((3*r3*r3)+(l3*l3))/12.0}" iyz="0" izz="${(m3*r3*r3)/2.0}"/>
 		</inertial>
 	</link>	
