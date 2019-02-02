@@ -17,6 +17,6 @@
 	<arg name="y" default="0.0" />
 	<arg name="z" default="0.0" />
 	
-	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -model $(arg model) -param robot_description"/>
+	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -x $(arg x) -y $(arg y) -z $(arg z) -model robot -param robot_description"/>
 
 </launch>
