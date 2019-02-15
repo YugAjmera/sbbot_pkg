@@ -10,5 +10,5 @@
 	<node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher"/>
 
 	<!-- Show in Rviz-->
-	<node name="rviz" pkg="rviz" type="rviz" args=""/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find sbbot_pkg)/rviz/balence.rviz" required="true"/>
 </launch>
